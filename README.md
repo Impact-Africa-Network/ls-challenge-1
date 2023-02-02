@@ -23,13 +23,13 @@
 
         sudo -u postgres psql
 
-        > create database ian_merch;
+        > create database ian_proje;
 
         > create role ian with password 'ian';
 
         > alter role ian with login;
 
-        > grant all on database ian_merch to ian;
+        > grant all on database ian_proje to ian;
 
 6.  Make migrations
 
