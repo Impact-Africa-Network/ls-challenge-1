@@ -1,35 +1,25 @@
 # Set up
 
-1. Create and activate virtual environment
-
-   ```bash
-   pipenv --python 3.10
-   
-   pipenv shell
-   ```
-3. Install django
-
-   ```bash
-   
-   pipenv install django
-   ```
-5. Start project using this template, ensuring to replace `ian_test_proj` with the appropriate project name on the command below:
+1.  Create and activate virtual environment
 
     ```bash
-    django-admin startproject --template https://github.com/Impact-Africa-Network/ian-django-template/archive/main.zip ian_test_proj .
+    pipenv --python 3.10
+
+    pipenv shell
     ```
-4. Rename all the `.template` files by removing the `.template` extensions
 
-5. Copy the contents of `example.env` to `.env`
+2.  Rename all the `.template` files by removing the `.template` extensions
+
+3.  Copy the contents of `example.env` to `.env`
 
     ```bash
-    
+
        cp example.env .env
-     ```
+    ```
 
-6. Populate the `.env` with real values.
+4.  Populate the `.env` with real values.
 
-7. Setup your database
+5.  Setup your database
 
         sudo -u postgres psql
 
@@ -40,8 +30,8 @@
         > alter role ian with login;
 
         > grant all on database ian_merch to ian;
-        
-8. Make migrations
+
+6.  Make migrations
 
         ./manage.py makemigrations
 
