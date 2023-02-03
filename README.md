@@ -1,3 +1,13 @@
+# Learning session chellenge - Fix project ordering on the dashboard
+
+Currently, the projects on the dashboard are ordered by start date. The project managers want to see them in a different order.
+
+_As a result of this task:_
+
+- Projects on the dashboard must be ordered by end date descendingly.
+- Projects that have not ended yet, must be shown first.
+- Make sure that the projects' list in the Django admin has the same ordering.
+
 # Set up
 
 1.  Create and activate virtual environment
